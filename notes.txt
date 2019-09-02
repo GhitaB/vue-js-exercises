@@ -5,3 +5,6 @@ https://vuejs.org/v2/guide/installation.html#Direct-lt-script-gt-Include
 01 Basic installation
 02 Reactive data
     in Console: app.name = "New name" - the title is changed in page, too.
+02 Binding data attributes
+    NO: <img src="{{}}"...
+    YES: <img v-bind:src="image_var_name"...
