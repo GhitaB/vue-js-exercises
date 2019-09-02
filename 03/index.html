@@ -18,8 +18,19 @@
         </div>
         <div class="col">
           <h3 class="text-info">{{ item.name }}</h3>
-          <p class="mb-0">{{ item.description }}</p>
-          <div class="h5 float-right">${{ item.price }}</div>
+          <p class="mb-0">
+            {{ item.description }}
+
+            <span v-for="num in [1, 2, 3, 4]"
+                  v-if="num %2 == 0">
+              {{ num }}
+            </span>
+          </p>
+          <div class="h5 float-right">
+            ${{ item.price }}
+            <span v-if="item.price <= 20">!!!</span>
+          </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->

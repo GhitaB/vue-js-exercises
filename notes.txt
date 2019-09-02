@@ -11,3 +11,10 @@ https://vuejs.org/v2/guide/installation.html#Direct-lt-script-gt-Include
     YES: <img :src="image" :alt="name" />
 03 Looping through data
     v-for="item in products" ... item.name
+03 Conditional data
+    v-if="item.price <= 20"
+
+    <span v-for="num in [1, 2, 3, 4]"
+          v-if="num %2 == 0">
+      {{ num }}
+    </span>
