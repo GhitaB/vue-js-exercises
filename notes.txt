@@ -2,3 +2,6 @@ https://vuejs.org/
 https://vuejs.org/v2/guide/installation.html#Direct-lt-script-gt-Include
   CDN
 
+01 Basic installation
+02 Reactive data
+    in Console: app.name = "New name" - the title is changed in page, too.
