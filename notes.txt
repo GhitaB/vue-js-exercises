@@ -20,3 +20,4 @@ https://vuejs.org/v2/guide/installation.html#Direct-lt-script-gt-Include
     </span>
 
 04 Handling user input
+05 Lifecycle hooks

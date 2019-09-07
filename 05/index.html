@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <div class="form-inline mr-auto">
+        <label class="font-weight-bold mr-2" for="formMax">max</label>
+        <input type="text" id="formMax" class="form-control w-25" v-model="maximum">
+      </div>
+      <input type="range" class="custom-range" min="0" max="200" v-model="maximum" />
+      <div class="row d-flex mb-3 align-items-center" v-for="item in products">
+        <div class="col-sm-4">
+          <img class="img-fluid" :src="item.image" :alt="item.name" />
+        </div>
+        <div class="col">
+          <h3 class="text-info">{{ item.name }}</h3>
+          <p class="mb-0">
+            {{ item.description }}
+
+            <span v-for="num in [1, 2, 3, 4]"
+                  v-if="num %2 == 0">
+              {{ num }}
+            </span>
+          </p>
+          <div class="h5 float-right">
+            ${{ item.price }}
+            <span v-if="item.price <= Number(maximum)">!!!</span>
+          </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          maximum: 20,
+          products: null
+        },
+        mounted: function() {
+          fetch('https://hplussport.com/api/products/order/price')
+            .then(response => response.json())
+            .then(data => {
+              this.products = data;
+            })
+        }
+      });
+    </script>
+  </body>
+</html>
