@@ -18,3 +18,5 @@ https://vuejs.org/v2/guide/installation.html#Direct-lt-script-gt-Include
           v-if="num %2 == 0">
       {{ num }}
     </span>
+
+04 Handling user input
