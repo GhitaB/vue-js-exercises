@@ -37,6 +37,12 @@ TEMPLATES ---------------------------------------------------------------------
     Parsed: <span v-html="texttext + '---'"></span>
     Unchangeable: <span v-once>{{ texttext }}</span>
     <textarea v-model="texttext"></textarea>
+Binding attributes with v-bind
+    v-bind:src="products[0].image"
+    :src="..."
+    :class=""
+    :alt=""
+    v-bind="{class: '', alt: ''}"
 CSS STYLES --------------------------------------------------------------------
 MORE --------------------------------------------------------------------------
 COMPONENT BASED VUE -----------------------------------------------------------
