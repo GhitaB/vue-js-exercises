@@ -15,7 +15,17 @@
       <div class="form-inline mr-auto">
         <label class="font-weight-bold mr-2" for="formMax">max</label>
         <input type="text" id="formMax" class="form-control w-25" v-model="maximum">
-        <p>Cart: {{ cart.length }}</p>
+        <p>
+          Cart: {{ cart.length }}
+        </p>
+        <p>
+          Bound: <span>{{ texttext }}</span>
+          <br />
+          Parsed: <span v-html="texttext + '---'"></span>
+          <br />
+          Unchangeable: <span v-once>{{ texttext }}</span>
+        </p>
+        <textarea v-model="texttext"></textarea>
       </div>
       <input type="range" class="custom-range" min="0" max="200" v-model="maximum" />
       <div class="row d-flex mb-3 align-items-center" v-for="item in products">
@@ -50,6 +60,7 @@
       var app = new Vue({
         el: '#app',
         data: {
+          texttext: "asdasasdasd <b>fsdfsd</b>",
           maximum: 20,
           products: null,
           cart: []

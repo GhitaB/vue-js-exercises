@@ -32,6 +32,11 @@ OVERVIEW ----------------------------------------------------------------------
         }
       },
 TEMPLATES ---------------------------------------------------------------------
+05 Template interpolations
+    Bound: <span>{{ texttext }}</span>
+    Parsed: <span v-html="texttext + '---'"></span>
+    Unchangeable: <span v-once>{{ texttext }}</span>
+    <textarea v-model="texttext"></textarea>
 CSS STYLES --------------------------------------------------------------------
 MORE --------------------------------------------------------------------------
 COMPONENT BASED VUE -----------------------------------------------------------
