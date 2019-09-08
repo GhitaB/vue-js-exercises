@@ -66,6 +66,8 @@ Creating transitions and animations
   .fade-enter { opacity: 0; }
   .fade-enter-active { transition: all ls ease-in-out; }
   Vue injects class names, inspect page to see them
+Using an animation framework
+  https://github.com/daneden/animate.css
 MORE --------------------------------------------------------------------------
 COMPONENT BASED VUE -----------------------------------------------------------
 CLI ---------------------------------------------------------------------------
