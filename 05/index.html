@@ -24,7 +24,7 @@
         </div>
         <div class="col">
           <h3 class="text-info">{{ item.name }}</h3>
-          <h3 class="text-info" v-on:click="cart.push(item)">+ </h3>
+          <h3 class="text-info" v-on:click="addItem(item)">+ </h3>
           <p class="mb-0">
             {{ item.description }}
 
@@ -53,6 +53,11 @@
           maximum: 20,
           products: null,
           cart: []
+        },
+        methods: {
+          addItem: function(product) {
+            this.cart.push(product);
+          }
         },
         mounted: function() {
           fetch('https://hplussport.com/api/products/order/price')
