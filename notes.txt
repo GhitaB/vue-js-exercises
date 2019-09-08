@@ -49,6 +49,14 @@ CSS STYLES --------------------------------------------------------------------
 Binding classes with objects and arrays
   :class="['class-1', 'class-2']"
   :style-"{'color': 'red', 'margin': '10px'}"
+Expressions and computed classes
+  computed: {
+    sliderState: function() {
+      return this.sliderStatus ? 'default-class': 'custom-class'
+      // if this.sliderStatus is true: default class, else custom class
+    }
+
+  }
 MORE --------------------------------------------------------------------------
 COMPONENT BASED VUE -----------------------------------------------------------
 CLI ---------------------------------------------------------------------------
