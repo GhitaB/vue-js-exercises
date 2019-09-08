@@ -21,3 +21,5 @@ https://vuejs.org/v2/guide/installation.html#Direct-lt-script-gt-Include
 
 04 Handling user input
 05 Lifecycle hooks
+05 Events and methods
+      v-on:click="cart.push(item)"
