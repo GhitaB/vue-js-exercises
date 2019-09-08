@@ -60,6 +60,12 @@ Expressions and computed classes
 Toggling computed classes
   v-on:click=""
   @click="sliderStatus = !sliderStatus"
+Creating transitions and animations
+  <transition name="fade">
+  </transition>
+  .fade-enter { opacity: 0; }
+  .fade-enter-active { transition: all ls ease-in-out; }
+  Vue injects class names, inspect page to see them
 MORE --------------------------------------------------------------------------
 COMPONENT BASED VUE -----------------------------------------------------------
 CLI ---------------------------------------------------------------------------
