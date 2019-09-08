@@ -44,6 +44,7 @@ Binding attributes with v-bind
     :alt=""
     v-bind="{class: '', alt: ''}"
 05 Using computed properties
+Using methods - updated each time
 CSS STYLES --------------------------------------------------------------------
 MORE --------------------------------------------------------------------------
 COMPONENT BASED VUE -----------------------------------------------------------
