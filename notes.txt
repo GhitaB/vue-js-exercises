@@ -46,6 +46,9 @@ Binding attributes with v-bind
 05 Using computed properties
 Using methods - updated each time
 CSS STYLES --------------------------------------------------------------------
+Binding classes with objects and arrays
+  :class="['class-1', 'class-2']"
+  :style-"{'color': 'red', 'margin': '10px'}"
 MORE --------------------------------------------------------------------------
 COMPONENT BASED VUE -----------------------------------------------------------
 CLI ---------------------------------------------------------------------------
