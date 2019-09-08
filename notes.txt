@@ -68,6 +68,8 @@ Creating transitions and animations
   Vue injects class names, inspect page to see them
 Using an animation framework
   https://github.com/daneden/animate.css
+Working with transition groups
+  <transition-group></transition-group>
 MORE --------------------------------------------------------------------------
 COMPONENT BASED VUE -----------------------------------------------------------
 CLI ---------------------------------------------------------------------------
