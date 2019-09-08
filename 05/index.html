@@ -24,6 +24,8 @@
           Parsed: <span v-html="texttext + '---'"></span>
           <br />
           Unchangeable: <span v-once>{{ texttext }}</span>
+          <br />
+          Computed: <span v-once>{{ betterText }}</span>
         </p>
         <textarea v-model="texttext"></textarea>
       </div>
@@ -68,6 +70,11 @@
         methods: {
           addItem: function(product) {
             this.cart.push(product);
+          }
+        },
+        computed: {
+          betterText: function() {
+            return "better" + this.texttext;
           }
         },
         mounted: function() {
