@@ -57,6 +57,9 @@ Expressions and computed classes
     }
 
   }
+Toggling computed classes
+  v-on:click=""
+  @click="sliderStatus = !sliderStatus"
 MORE --------------------------------------------------------------------------
 COMPONENT BASED VUE -----------------------------------------------------------
 CLI ---------------------------------------------------------------------------
