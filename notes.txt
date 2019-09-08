@@ -2,6 +2,7 @@ https://vuejs.org/
 https://vuejs.org/v2/guide/installation.html#Direct-lt-script-gt-Include
   CDN
 
+OVERVIEW ----------------------------------------------------------------------
 01 Basic installation
 02 Reactive data
     in Console: app.name = "New name" - the title is changed in page, too.
@@ -30,3 +31,10 @@ https://vuejs.org/v2/guide/installation.html#Direct-lt-script-gt-Include
           this.cart.push(product);
         }
       },
+TEMPLATES ---------------------------------------------------------------------
+CSS STYLES --------------------------------------------------------------------
+MORE --------------------------------------------------------------------------
+COMPONENT BASED VUE -----------------------------------------------------------
+CLI ---------------------------------------------------------------------------
+BUILD TOOLS -------------------------------------------------------------------
+ROUTER ------------------------------------------------------------------------
